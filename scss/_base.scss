@@ -16,9 +16,21 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 94px;
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and(min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 
   &.task {
     margin-top: 94px;
@@ -29,8 +41,7 @@ body {
     padding-top: 94px;
     text-align: center;
   }
-
-
+}
 
 a {
   text-decoration: none;
@@ -56,10 +67,10 @@ p {
 }
 
 .icon-instagram,
-.icon-twitter,
+.icon-linkedin,
 .icon-facebook,
-.icon-linkedin {
-    width: 20px;
+.icon-twitter {
+  width: 20px;
   height: 20px;
   fill: #afb1b8;
 }
