@@ -1,0 +1,39 @@
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
+.main-button {
+  text-align: center;
+}
+
+.button.primary {
+  background-color: $background-color;
+  color: $white-color;
+
+  &.header {
+    display: inline-block;
+    margin-top: 30px;
+
+    border: none;
+  }
+}
+
+.button.secondary {
+  background-color: $background-team-color;
+  color: $primary-text-color;
+
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $background-color;
+    color: $white-color;
+  }
+}

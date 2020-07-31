@@ -1,0 +1,23 @@
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6 {
+  fill: #afb1b8;
+
+  transition: fill 250ms $timing-function;
+
+  &:hover {
+    fill: $link-color;
+  }
+}
+
+// .logo1:hover,
+// .logo2:hover,
+// .logo3:hover,
+// .logo4:hover,
+// .logo5:hover,
+// .logo6:hover {
+//   fill: var(--link-color);
+// }

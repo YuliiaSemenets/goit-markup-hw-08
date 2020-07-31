@@ -1,0 +1,22 @@
+.footer-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+  }
+}
+
+.footer-list .icon-instagram,
+.footer-list .icon-twitter,
+.footer-list .icon-facebook,
+.footer-list .icon-linkedin {
+  fill: #ffffff;
+}
