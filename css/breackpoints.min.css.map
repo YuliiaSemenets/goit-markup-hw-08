@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/breackpoints.scss"
-    ],
-    "names": [],
-    "file": "breackpoints.min.css"
-}

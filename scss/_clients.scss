@@ -1,9 +1,10 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
 
   .item {
-    margin-top: 50px;
-    width: 170px;
+    margin-top: 30px;
+    width: 210px;
     height: 90px;
     padding-top: 20px;
 
@@ -18,8 +19,8 @@
       border: 1px solid $link-color;
     }
   }
-
-  .item + .item {
-    margin-left: 30px;
-  }
 }
+//   .item + .item {
+//     margin-left: 30px;
+//   }
+// }

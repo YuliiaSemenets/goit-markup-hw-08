@@ -1,96 +1,30 @@
 .nav-main {
   margin-top: 0px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-
-.text-nav {
-  display: flex;
-  margin-left: 85px;
-
-  .item + .item {
-    margin-left: 50px;
-  }
-
-  .link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color 250ms $timing-function;
-  }
-
-  .link.accent::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $link-color;
-
-    opacity: 1;
-  }
-}
-
-.link.accent {
-  color: $link-color;
-}
-
-//
-
-.text-contacts {
-  display: flex;
+  width: 480px;
   margin-left: auto;
+  margin-right: auto;
 
-  .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: $paragraph-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color 250ms $timing-function;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  .item + .item {
-    margin-left: 30px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
-.link {
-  &:hover,
-  &:focus {
-    color: $link-color;
-  }
-}
-
-.icon-envelope,
-.icon-phone {
-  fill: currentColor;
-
-  &:hover {
-    fill: currentColor;
-  }
+.main-logo {
+  width: 141px;
+  margin-top: 16px;
 }
 
 .menu-button {
   display: inline-flex;
-  margin: 0;
+  margin-top: 10px;
+  // margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;

@@ -1,8 +1,14 @@
 .task {
+  // margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+
+  // text-align: center;
   color: $primary-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 
   &-main {

@@ -1,14 +1,17 @@
 .form-field-send {
-  position: absolute;
-  display: inline-block;
-  top: 57px;
-  left: 600px;
+  // position: absolute;
+  // display: inline-block;
+  // top: 57px;
+  // left: 600px;
 }
 
 .form-input-send {
-  position: absolute;
-  top: 20px;
-  width: 358px;
+  // position: absolute;
+  // top: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
+
+  width: 450px;
   height: 50px;
   background-color: inherit;
 
@@ -19,10 +22,12 @@
 }
 
 .button-send {
-  position: absolute;
-  left: 370px;
-  top: 20px;
-
+  // position: absolute;
+  // left: 370px;
+  // top: 20px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 140px;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -37,6 +42,9 @@
     left: 29px;
     top: 50%;
     transform: translateY(-50%);
+    font-weight: bold;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -60,5 +68,9 @@
     display: block;
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media screen and(max-width: $mobile-upper) {
+      display: none;
+    }
   }
 }

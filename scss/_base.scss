@@ -12,19 +12,19 @@ body {
 
 .conteiner {
   outline: $primary-text-color;
-
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 94px;
+  // margin-top: 94px;
   // width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $mobile-upper) {
     width: $mobile;
   }
 
-  @media screen and(min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     width: $tablet;
   }
 
@@ -33,12 +33,23 @@ body {
   }
 
   &.task {
-    margin-top: 94px;
+    // margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    @media screen and (max-width: $mobile-upper) {
+      display: none;
+    }
   }
 
   &.team {
-    margin-top: 94px;
-    padding-top: 94px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    align-items: center;
+    // padding-top: 94px;
     text-align: center;
   }
 }

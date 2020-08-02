@@ -9,56 +9,78 @@
       rel="stylesheet"
     />
 
-   
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--top line-->
     <header class="header-container">
       <nav class="conteiner nav-main">
-        <a href="./index.html">
-          <img src="./img/WebStudio.png" alt="WebStudio" width="153" />
+        <a class="" href="./index.html">
+          <img
+            class="main-logo"
+            src="./img/WebStudio.png"
+            alt="WebStudio"
+            width="141"
+          />
         </a>
 
-        <!--Навигация-->
-        <ul class="text-nav">
-          <li class="item">
-            <a href="./index.html" class="link accent">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="item"><a href="/контакты" class="link">Контакты</a></li>
-        </ul>
-
-        <ul class="text-contacts">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-envelope" width="16" height="11.2">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-phone" width="10" height="14.94">
-                <use href="./img/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <button type="button" class="menu-button is-open" 
-         aria-expanded="false"
-        data-menu-button
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          data-menu-button
         >
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close" href="./img/sprite.svg#close"></use>
-            <use class="icon-menu" href="./img/sprite.svg#menu"></use> 
+          <svg
+            class="burger"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-close"
+              href="./img/sprite.svg#close"
+              width="18.67"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./img/sprite.svg#menu"
+              width="24"
+            ></use>
           </svg>
         </button>
+
+        <!--Навигация-->
+        <!-- <div class="mobile-menu">
+          <ul class="text-nav">
+            <li class="item">
+              <a href="./index.html" class="link accent">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="/контакты" class="link">Контакты</a></li>
+          </ul>
+
+          <ul class="text-contacts">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="icon-envelope" width="16" height="11.2">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="icon-phone" width="10" height="14.94">
+                  <use href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div> -->
       </nav>
     </header>
 
@@ -75,7 +97,6 @@
 
     <!--Main conteiner-->
     <main>
-      <!--Внимание к деталям-->
       <h2 class="invisible">Наши преимущества</h2>
       <div class="conteiner">
         <ul class="features">
@@ -181,7 +202,7 @@
           <div class="our-team">
             <div class="card">
               <ul>
-                <li>
+                <li class="discript-team">
                   <img src="./img/photo1.jpg" alt="photo1" width="270" />
                   <h3 class="name">Николай Кучеренко</h3>
                   <p class="position">Product Designer</p>
@@ -358,7 +379,7 @@
           <h2 class="task">Постоянные клиенты</h2>
           <ul class="clients">
             <li class="item">
-              <a class="client-link" href="/">
+              <a class="/" href="/">
                 <svg class="logo1" width="44.27" height="49.23">
                   <use href="./img/sprite.svg#icon-logo1"></use>
                 </svg>
@@ -408,8 +429,8 @@
 
     <footer class="finish">
       <div class="conteiner finish">
-        <div class="main-adress">
-          <div class="">
+        <div class="">
+          <div class="main-adress">
             <img
               class="footer-logo"
               src="./img/WebStudio.png"
@@ -463,7 +484,7 @@
           </div>
         <div class="form-field-send">
             <form>
-              <p class="paragraph">Подпишитесь на рассылку</p>
+              <p class="paragraph-sign">Подпишитесь на рассылку</p>
               <div class="">
                 <input
                   class="form-input-send"
@@ -557,14 +578,16 @@
             </div>
           </div>
           <div class="agree">
-        
-          
             <label class="agree-text">
-                <input class="checkbox" type="checkbox" name="agree" value="agree"/>
-                <span class="modal-icon-agree"></span>Соглашаюсь с рассылкой и принимаю<a class="agree-link" href=""> Условия договора</a
-              >
-              </label
-            >
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="agree"
+                value="agree"
+              />
+              <span class="modal-icon-agree"></span>Соглашаюсь с рассылкой и
+              принимаю<a class="agree-link" href=""> Условия договора</a>
+            </label>
           </div>
           <button class="modal-button" type="submit">
             Отправить
@@ -589,6 +612,6 @@
     </script>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js" ></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
