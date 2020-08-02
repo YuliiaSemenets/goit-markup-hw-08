@@ -1,13 +1,15 @@
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1170px;
+  // display: flex;
+  // flex-wrap: wrap;
+  margin-top: 40px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
 
   .item {
-    width: 370px;
+    // width: 450px;
     margin-top: 30px;
+
     background: $white-color;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -19,13 +21,13 @@
         0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
     }
 
-    &:not(:nth-child(3n)) {
-      margin-right: 30px;
-    }
+    // &:not(:nth-child(3n)) {
+    //   margin-right: 30px;
+    // }
 
-    &:nth-child(-n + 3) {
-      margin-top: 34px;
-    }
+    // &:nth-child(-n + 3) {
+    //   margin-top: 34px;
+    // }
   }
 
   &-card {
@@ -60,7 +62,8 @@
 // }
 
 .projects {
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
 
   color: $primary-text-color;
   font-weight: 700;
@@ -75,7 +78,8 @@
   left: 0;
   top: 63px;
   left: 24px;
-  width: 322px;
+  width: 402px;
+  // width: 322px;
   height: 168px;
   margin-top: 4px;
 
@@ -90,6 +94,8 @@
 }
 
 .view {
+  padding-left: 24px;
+  padding-bottom: 20px;
   color: $paragraph-color;
   font-size: 16px;
   line-height: 1.87;

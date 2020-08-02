@@ -9,7 +9,9 @@
 }
 
 .main-button {
-  text-align: center;
+  margin-top: 60px;
+  margin-left: 15px;
+  justify-content: space-between;
 }
 
 .button.primary {
@@ -27,15 +29,29 @@
 }
 
 .button.secondary {
+  display: inline-block;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   background-color: $background-team-color;
   color: $primary-text-color;
 
   transition: background-color 250ms $timing-function,
     color 250ms $timing-function;
 
+  &:nth-last-child(-n + 2) {
+    margin-top: 21px;
+  }
+
   &:hover,
   &:focus {
     background-color: $background-color;
     color: $white-color;
+  }
+
+  & + .button.secondary {
   }
 }

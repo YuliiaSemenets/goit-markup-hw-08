@@ -428,10 +428,13 @@ p {
 .text-contacts .item {
   display: block;
   margin-top: 60px;
-  margin-bottom: 60px;
   padding: 0;
   height: 21px;
   background-color: #ffffff;
+}
+
+.text-contacts .item:not(:first-child) {
+  margin-bottom: 60px;
 }
 
 .text-contacts .item + .item {
@@ -455,6 +458,7 @@ p {
 .main-logo {
   width: 141px;
   margin-top: 16px;
+  margin-left: 15px;
 }
 
 .menu-button {
@@ -485,6 +489,7 @@ p {
 
 .mobile-menu {
   display: none;
+  z-index: 1;
   margin: 0;
   position: absolute;
   top: 100%;
@@ -509,7 +514,11 @@ p {
 }
 
 .main-button {
-  text-align: center;
+  margin-top: 60px;
+  margin-left: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .button.primary {
@@ -526,10 +535,20 @@ p {
 }
 
 .button.secondary {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   background-color: #f5f4fa;
   color: #212121;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.secondary:nth-last-child(-n + 2) {
+  margin-top: 21px;
 }
 
 .button.secondary:hover, .button.secondary:focus {
@@ -863,6 +882,10 @@ p {
 
 .contacts {
   margin-left: 35px;
+}
+
+.contacts + .contacts {
+  margin-top: 16px;
 }
 
 .contacts a {
