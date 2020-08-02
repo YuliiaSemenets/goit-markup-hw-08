@@ -8,11 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-<!-- 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    /> -->
+
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
@@ -21,44 +17,76 @@
 
     <header class="header-container">
       <nav class="conteiner nav-main">
-        <a href="./index.html">
-          <img src="./img/WebStudio.png" alt="WebStudio" width="153" />
+        <a class="" href="./index.html">
+          <img
+            class="main-logo"
+            src="./img/WebStudio.png"
+            alt="WebStudio"
+            width="141"
+          />
         </a>
 
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="burger"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-close"
+              href="./img/sprite.svg#close"
+              width="18.67"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./img/sprite.svg#menu"
+              width="24"
+            ></use>
+          </svg>
+        </button>
+
         <!--Навигация-->
+        <!-- <div class="mobile-menu is-open" data-menu>
+          <ul class="text-nav">
+            <li class="item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link accent">Портфолио</a>
+            </li>
+            <li class="item"><a href="/контакты" class="link">Контакты</a></li>
+          </ul>
 
-        <ul class="text-nav">
-          <li class="item"><a href="./index.html" class="link">Студия</a></li>
-
-          <li class="item">
-            <a class="link accent" href="/портфолио">Портфолио</a>
-          </li>
-
-          <li class="item"><a href="/контакты" class="link">Контакты</a></li>
-        </ul>
-        <ul class="text-contacts">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-envelope" width="16" height="11.2">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-phone" width="10" height="14.94">
-                <use href="./img/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="text-contacts">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="icon-envelope" width="16" height="11.2">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="icon-phone" width="10" height="14.94">
+                  <use href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div> -->
       </nav>
     </header>
 
     <!--Основное меню-->
-    <main>
+    <!-- <main>
       <h1 class="invisible">Навигация</h1>
       <div class="conteiner item">
         <div class="main-button">
@@ -67,11 +95,11 @@
           <a href="" class="button secondary">Приложения</a>
           <a href="" class="button secondary">Дизайн</a>
           <a href="" class="button secondary">Маркетинг</a>
-        </div>
+        </div> -->
 
-        <!--Наши проэкты-->
+    <!--Наши проэкты-->
 
-        <section>
+    <!-- <section>
           <h2 class="invisible">Наши проэкты</h2>
           
             <ul class="portfolio">
@@ -216,9 +244,9 @@
                     <p class="view">Веб-сайт</p>
                   </a>
                 </div>
-              </li>
+              </li> -->
 
-              <li class="item">
+    <!-- <li class="item">
                 <div class="product">
                   <a href="">
                     <div class="portfolio-card">
@@ -290,11 +318,11 @@
           </div>
         </section>
       </div>
-    </main>
+    </main> -->
 
     <!--Как с нами связаться-->
 
-    <footer class="finish">
+    <!-- <footer class="finish">
       <div class="conteiner finish">
         <div class="main-adress">
           <div class="">
@@ -366,6 +394,6 @@
         <p class="">2020 | Developed by GoIT Students</p>
       </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

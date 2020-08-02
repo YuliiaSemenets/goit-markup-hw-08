@@ -1,4 +1,5 @@
 .nav-main {
+  position: relative;
   margin-top: 0px;
   display: flex;
   justify-content: space-between;
@@ -16,6 +17,109 @@
   }
 }
 
+.text-nav {
+  border: none;
+  // display: flex;
+  // margin-left: 85px;
+
+  .item {
+    display: block;
+    margin-top: 60px;
+    padding: 0;
+    height: 21px;
+    background-color: #ffffff;
+  }
+
+  .item + .item:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  .link {
+    position: relative;
+    // display: block;
+    padding: 0;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-function;
+  }
+
+  .link.accent::after {
+    content: "";
+
+    position: absolute;
+    // margin-top: 95px;
+    left: 0;
+    top: 25px;
+    // display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $link-color;
+
+    opacity: 1;
+  }
+}
+
+.link.accent {
+  color: $link-color;
+}
+
+//
+
+.text-contacts {
+  // display: flex;
+  // margin-left: auto;
+
+  .link {
+    // display: block;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
+    color: $paragraph-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-function;
+  }
+
+  .item {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+    height: 21px;
+    background-color: #ffffff;
+  }
+  .item + .item {
+    margin-top: 16px;
+  }
+}
+
+.link {
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+}
+
+.icon-envelope,
+.icon-phone {
+  fill: currentColor;
+
+  &:hover {
+    fill: currentColor;
+  }
+}
+
 .main-logo {
   width: 141px;
   margin-top: 16px;
@@ -28,6 +132,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:hover {
+    fill: $link-color;
+  }
 }
 
 .menu-button .icon-close {
@@ -40,4 +148,20 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.mobile-menu {
+  display: none;
+
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: $white-color;
+
+  &.is-open {
+    display: block;
+  }
 }
