@@ -15,6 +15,10 @@
 
     transition: border 250ms $timing-function;
 
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+    }
+
     &:hover {
       border: 1px solid $link-color;
     }

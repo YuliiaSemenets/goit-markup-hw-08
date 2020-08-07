@@ -12,10 +12,7 @@
 .form-input-send {
   // position: absolute;
   // top: 20px;
-  margin-top: 20px;
-  margin-left: 15px;
 
-  width: 450px;
   height: 50px;
   background-color: inherit;
 
@@ -23,6 +20,19 @@
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @media screen and (max-width: $tablet-upper) {
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 108px;
+    left: 600px;
+    width: 358px;
+  }
 }
 
 .button-send {
@@ -40,6 +50,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 108px;
+    right: 200px;
+  }
 
   .text {
     position: absolute;

@@ -19,6 +19,12 @@
     max-width: 768px;
     height: 463px;
   }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 292px;
+    margin-top: 94px;
+  }
 }
 
 .footer-logo {
@@ -31,13 +37,16 @@
   @media screen and (min-width: $tablet) {
     margin-left: 115px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 15px;
+  }
 }
 
 .main-adress {
-  // display: flex;
-  // justify-content: space-between;
-  // margin-left: auto;
-  // margin-right: auto;
+  // @media screen and (min-width: $desktop) {
+  //   margin-left: 214px;
+  // }
 }
 
 .adress {
@@ -47,6 +56,10 @@
     }
     @media screen and (min-width: $tablet) {
       margin-left: 76px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 15px;
     }
   }
 
@@ -66,6 +79,10 @@
   @media screen and (max-width: $mobile-upper), (min-width: $tablet) {
     margin-left: 35px;
     margin-top: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 0;
   }
 
   & + .contacts {
@@ -91,6 +108,11 @@
 
     @media screen and (min-width: $tablet) {
       right: 89px;
+      top: -5px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      left: 169px;
       top: -5px;
     }
   }
@@ -131,6 +153,11 @@
   line-height: 1.14;
   text-transform: uppercase;
 
+  @media screen and (min-width: $desktop) {
+    margin-top: 70px;
+    margin-left: 135px;
+  }
+
   &-sign {
     color: $white-color;
     font-weight: 700;
@@ -146,6 +173,12 @@
 
     @media screen and (min-width: $tablet) {
       margin-left: 116px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      top: 65px;
+      left: 600px;
     }
   }
 }

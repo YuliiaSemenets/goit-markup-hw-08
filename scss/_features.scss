@@ -16,6 +16,10 @@
     flex-wrap: wrap;
     margin-top: 60px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 94px;
+  }
 }
 
 .item {
@@ -38,6 +42,10 @@
   @media screen and (min-width: $tablet) {
     width: 354px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .list {
@@ -45,6 +53,11 @@
 
   @media screen and (min-width: $tablet) {
     width: calc((100% - 4 * 15) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 270px;
+    width: calc((100% - 8 * 15) / 4);
   }
 }
 

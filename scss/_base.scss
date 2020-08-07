@@ -33,6 +33,7 @@ body {
   }
 
   &.task {
+    // margin: -15px;
     // margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -40,6 +41,15 @@ body {
 
     @media screen and (max-width: $mobile-upper), (min-width: $tablet) {
       display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+      margin-top: 94px;
+    }
+
+    &-order {
+      margin-top: 94px;
     }
   }
 
@@ -49,9 +59,13 @@ body {
     margin-right: auto;
     padding: 0;
     align-items: center;
-    // padding-top: 94px;
+
     text-align: center;
     background-color: #f5f4fa;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 94px;
+    }
   }
 }
 

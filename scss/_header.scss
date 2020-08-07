@@ -28,6 +28,8 @@
   }
 
   @media screen and (min-width: $desktop) {
+    padding-left: 15px;
+    padding-right: 15px;
     width: $desktop;
     display: flex;
   }
@@ -44,6 +46,11 @@
     margin-right: 84px;
     // margin-left: 81px;
     margin-top: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 85px;
+    margin-right: 0;
   }
 
   .item {
@@ -126,16 +133,18 @@
 //
 
 .text-contacts {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 15px;
+    margin-left: 305px;
   }
 
   .link {
     color: $paragraph-color;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
     transition: color 250ms $timing-function;
 
     @media screen and(min-width: $tablet) {
@@ -144,11 +153,15 @@
       line-height: 1.16;
       letter-spacing: 0.02em;
     }
+
+    @media screen and (max-width: $mobile-upper), (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
   }
 
   .item {
-    // display: block;
-
     padding: 0;
 
     @media screen and (max-width: $mobile-upper) {
@@ -161,6 +174,11 @@
       background-color: inherit;
       height: 14px;
       max-width: 138px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 16px;
+      max-width: 161px;
     }
 
     @media screen and (max-width: $mobile-upper) {
@@ -176,9 +194,16 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet), (max-width: $tablet-upper) {
     .item + .item {
       margin-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .item + .item {
+      margin-top: 0;
+      margin-left: 30px;
     }
   }
 }
