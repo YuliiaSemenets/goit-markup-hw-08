@@ -1,4 +1,8 @@
 .form-field-send {
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+    margin-left: 166px;
+  }
   // position: absolute;
   // display: inline-block;
   // top: 57px;
@@ -69,7 +73,7 @@
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-    @media screen and(max-width: $mobile-upper) {
+    @media screen and(max-width: $mobile-upper), (min-width: $tablet) {
       display: none;
     }
   }

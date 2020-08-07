@@ -8,14 +8,29 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  max-width: 480px;
+
   background-color: $footer-color;
-  height: 603px;
+
+  @media screen and (max-width: $mobile-upper) {
+    max-width: 480px;
+    height: 603px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    height: 463px;
+  }
 }
 
 .footer-logo {
   margin-top: 60px;
-  margin-left: 163px;
+
+  @media screen and (max-width: $mobile-upper) {
+    margin-left: 163px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 115px;
+  }
 }
 
 .main-adress {
@@ -27,11 +42,12 @@
 
 .adress {
   &-block {
-    // margin-right: 69px;
-    margin-left: 124px;
-
-    // width: 231px;
-    // height: 81px;
+    @media screen and (max-width: $mobile-upper) {
+      margin-left: 124px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-left: 76px;
+    }
   }
 
   &-title {
@@ -47,13 +63,17 @@
 }
 
 .contacts {
-  margin-left: 35px;
-  // margin-left: auto;
-  // margin-right: auto;
+  @media screen and (max-width: $mobile-upper), (min-width: $tablet) {
+    margin-left: 35px;
+    margin-top: 8px;
+  }
+
   & + .contacts {
     margin-top: 16px;
   }
+
   a {
+    margin-top: 8px;
     color: $footer-contacts-color;
     font-size: 14px;
     line-height: 1.71;
@@ -64,11 +84,15 @@
 .footer {
   &-list {
     position: absolute;
-    // top: 57px;
-    // left: 300px;
+
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+
+    @media screen and (min-width: $tablet) {
+      right: 89px;
+      top: -5px;
+    }
   }
 
   &-contact {
@@ -80,7 +104,7 @@
     width: 206px;
 
     .item {
-      @media screen and (max-width: $mobile-upper) {
+      @media screen and (max-width: $mobile-upper), (min-width: $tablet) {
         padding: 0;
         display: inline-flex;
         justify-content: center;
@@ -108,15 +132,21 @@
   text-transform: uppercase;
 
   &-sign {
-    margin-top: 200px;
-    margin-left: 131px;
-
     color: $white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     left: 50%;
+
+    @media screen and (max-width: $mobile-upper) {
+      margin-top: 200px;
+      margin-left: 131px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 116px;
+    }
   }
 }
 
@@ -130,7 +160,7 @@
   font-size: 12px;
   line-height: 2;
 
-  @media screen and(max-width: $mobile-upper) {
+  @media screen and(max-width: $mobile-upper), (min-width: $tablet) {
     display: none;
   }
 }
